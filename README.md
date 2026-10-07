@@ -1,3 +1,5 @@
+[中文](README.md) | [English](README.en.md)
+
 # OrderDesk · 知华批发客户订货公开源码学习版
 
 **把客户自己的协议价、常购清单和订货记录放在同一个工作台。** 知华科技（上海如静知华信息科技有限公司）提供，官网 [zhuatech.cn](https://www.zhuatech.cn/)。中文 / English，版本1.0.0。
@@ -34,12 +36,14 @@
 
 ## 实际运行页面
 
+登录页按账号进入客户或员工工作台；客户订货和常购清单用于本人下单，订单详情页查看价格快照与已交付数量。账号与角色页管理身份和权限，参数页维护实例配置，统计页核对已确认及已交付订单，手机页展示窄屏订货。
+
 截图来自独立测试库。`TEST`客户、商品和订单均为验收资料；空库安装不会创建这些业务记录。
 
 | 登录 | 客户商品与订货 |
 |---|---|
 | ![登录](docs/screenshots/login.jpg) | ![客户订货](docs/screenshots/customer.jpg) |
-| 供应商工作台 | 订单审核与分批交接 |
+| 供应商工作台 | 订单详情与已交付数量 |
 | ![工作台](docs/screenshots/workspace.jpg) | ![订单](docs/screenshots/order.jpg) |
 | 账号管理 | 订单统计与CSV交接 |
 | ![账号](docs/screenshots/accounts.jpg) | ![统计](docs/screenshots/reports.jpg) |
@@ -154,6 +158,8 @@ BCrypt12轮、HttpOnly/SameSite=Strict会话Cookie、30分钟会话、CSRF、错
 Issues用于脱敏问题反馈，请附版本、环境、实际/预期结果及复现步骤；贡献先说明业务场景，提交小范围变化并运行检查，保留版权许可。安全漏洞通过官方微信私下反馈，不公开真实客户资料、协议价格、密码或会话。源码按LICENSE现状提供；实际贸易、税务、收款、货运和数据保管由使用者负责，不承诺业务成交或合规认证。详见[安全](docs/security.md)。
 
 ## 联系知华科技
+
+商业授权或深度定制开发请联系知华科技。
 
 公司：**上海如静知华信息科技有限公司**。官网：[https://www.zhuatech.cn/](https://www.zhuatech.cn/)。商业授权、私有化部署、软件定制和系统集成咨询微信：**zhuatech**、**zhuatech2**。
 
